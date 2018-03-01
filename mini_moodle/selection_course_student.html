@@ -1,0 +1,38 @@
+ 
+
+<DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<form action="add_course.php" method="POST">
+			<p> Choose the courses if you wish to.</p>
+			<select multiple="multiple" name="course_add[]">
+				<option value="1">col100</option>
+				<option value="2"> pyl100</option>
+				<option value="3">mtl100</option>
+				<option value="4">ell100</option>
+				<option value="5">mtl101</option>
+				<option value="6"> cml100</option>
+				<option value="7">apl100</option>
+				<option value="8">mcp100</option>
+			</select>
+			<input type="submit" name="submit" value="add_course">
+		</form>
+		<form action="remove_course.php" method="POST">
+			<p>select the courses that you want to drop from your existing courses,select only that course that belong to your enrolled course that you want to drop.</p>
+			<select multiple="multiple" name="course_drop">
+				<option value="1">col100</option>
+				<option value="2"> pyl100</option>
+				<option value="3">mtl100</option>
+				<option value="4">ell100</option>
+				<option value="5">mtl101</option>
+				<option value="6"> cml100</option>
+				<option value="7">apl100</option>
+				<option value="8">mcp100</option>
+			</select>
+			<br><br><br>
+			<input type="submit" value="drop_course">
+		</form>
+	</body>
+</html>
